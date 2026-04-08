@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 [AddComponentMenu("Playground/Movement/Move")]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -18,6 +19,13 @@ public class Move : Physics2DObject
     private Vector2 movement;
     private PlayerControls controls;
     private Rigidbody2D rb;
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 24f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
+
+    [SerializeField] private TrailRenderer tr;
 
     private void Awake()
     {
@@ -42,12 +50,18 @@ public class Move : Physics2DObject
             controls.Player2.Disable();
     }
 
+    [System.Obsolete]
     void Update()
     {
+        
+       
         Vector2 moveInput;
 
         // Read from the correct map
         if (playerIndex == PlayerIndex.Player1)
+        
+    
+    
             moveInput = controls.Player1.Move.ReadValue<Vector2>();
         else
             moveInput = controls.Player2.Move.ReadValue<Vector2>();
@@ -59,10 +73,43 @@ public class Move : Physics2DObject
         if (movementType == Enums.MovementType.OnlyVertical) moveHorizontal = 0f;
 
         movement = new Vector2(moveHorizontal, moveVertical);
+        if (playerIndex == PlayerIndex.Player1)
+        {
+            if (controls.Player1.Dash.triggered && canDash)
+            {
+                StartCoroutine(Dash());
+            }
+        }
+       // else
+       // {
+           // if (controls.Player2.Dash.triggered && canDash) {
+               // StartCoroutine(Dash());
+           // }
+       // }
     }
 
+    [System.Obsolete]
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(movement.x * dashingPower, movement.y * dashingPower);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
     void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
         rb.AddForce(movement * speed * 10f);
     }
 }
