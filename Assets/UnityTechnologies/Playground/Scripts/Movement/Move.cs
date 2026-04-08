@@ -67,7 +67,10 @@ public class Move : Physics2DObject
             moveInput = controls.Player2.Move.ReadValue<Vector2>();
 
         float moveHorizontal = moveInput.x;
-        float moveVertical = moveInput.y;
+        float moveVertical = 0f;
+        if (isDashing) {
+            moveVertical = moveInput.y;
+        }
 
         if (movementType == Enums.MovementType.OnlyHorizontal) moveVertical = 0f;
         if (movementType == Enums.MovementType.OnlyVertical) moveHorizontal = 0f;
@@ -77,6 +80,7 @@ public class Move : Physics2DObject
         {
             if (controls.Player1.Dash.triggered && canDash)
             {
+                Vector2 dashInput = moveInput;
                 StartCoroutine(Dash());
             }
         }
@@ -95,7 +99,9 @@ public class Move : Physics2DObject
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.velocity = new Vector2(movement.x * dashingPower, movement.y * dashingPower);
+        Vector2 dashInput = controls.Player1.Move.ReadValue<Vector2>();
+        Vector2 dashDirection = dashInput.normalized;
+        rb.velocity = (dashDirection * dashingPower);
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
