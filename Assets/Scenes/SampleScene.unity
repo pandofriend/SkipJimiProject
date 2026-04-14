@@ -519,7 +519,7 @@ MonoBehaviour:
   rigidbody2D: {fileID: 0}
   playerIndex: 0
   speed: 5
-  movementType: 1
+  movementType: 0
   tr: {fileID: 1424137075}
 --- !u!114 &1424137060
 MonoBehaviour:
