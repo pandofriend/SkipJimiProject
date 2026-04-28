@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 75065cb66047d4b989ceaf0e4efd654e
+guid: ed659900859e94963841d94e20e9ee1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8631599995403202220
-    second: Grass_3_0
+      213: 104596521718269653
+    second: mail updated_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grass_3_0
+      name: mail updated_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 5
+        y: 60
+        width: 503
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4519abe4985663880800000000000000
-      internalID: -8631599995403202220
+      spriteID: 5d642c97bf9937100800000000000000
+      internalID: 104596521718269653
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Grass_3_0: -8631599995403202220
+      mail updated_0: 104596521718269653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
