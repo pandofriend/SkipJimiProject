@@ -20,7 +20,7 @@ public class Jump : Physics2DObject
 	//if not, the player can jump even while in the air
 	public bool checkGround = true;
 
-	private bool canJump = true;
+	public bool canJump = true;
 
 	// Read the input from the player
 	void Update()

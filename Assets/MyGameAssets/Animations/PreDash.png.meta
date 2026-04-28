@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: d637553b44d5a1c4f9f506b5dddfd713
+guid: 7cf20c06555ebcd4b8681956e8cff075
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4698867954809917594
-    second: BirdJump_0
-  - first:
-      213: 5718244173496600574
-    second: BirdJump_1
-  - first:
-      213: 5334619703631397833
-    second: BirdJump_2
+      213: 4878009348709467694
+    second: PreDash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BirdJump_0
+      name: PreDash_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 0
-        width: 468
-        height: 486
+        x: 94
+        y: 4
+        width: 423
+        height: 533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9059ec528bb53140800000000000000
-      internalID: 4698867954809917594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdJump_1
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 0
-        width: 554
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef7463c77c84b5f40800000000000000
-      internalID: 5718244173496600574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdJump_2
-      rect:
-        serializedVersion: 2
-        x: 1224
-        y: 43
-        width: 431
-        height: 535
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c3cfbe3b50680a40800000000000000
-      internalID: 5334619703631397833
+      spriteID: e26ccd868ab22b340800000000000000
+      internalID: 4878009348709467694
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BirdJump_0: 4698867954809917594
-      BirdJump_1: 5718244173496600574
-      BirdJump_2: 5334619703631397833
+      PreDash_0: 4878009348709467694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
