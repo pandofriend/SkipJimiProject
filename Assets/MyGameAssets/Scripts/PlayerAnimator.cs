@@ -23,7 +23,7 @@ public class PlayerAnimator : MonoBehaviour
       if(!animator) return;
 
     //Check moveHorizontal in PLayground Move
-      if(move.moveHorizontal == 1.0f || move.moveHorizontal == -1.0f )
+      if(move.moveHorizontal > 0.0f || move.moveHorizontal < -0.0f )
       {
       animator.SetBool("isWalking", true);
       } else if (move.moveHorizontal == 0.0f)
