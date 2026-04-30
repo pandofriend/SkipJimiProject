@@ -8927,6 +8927,7 @@ MonoBehaviour:
   speed: 4.5
   movementType: 0
   moveHorizontal: 0
+  moveVertical: 0
   tr: {fileID: 1424137075}
 --- !u!114 &1424137060
 MonoBehaviour:

@@ -26,9 +26,9 @@ public class Move : Physics2DObject
     private float dashingCooldown = 1f;
 
     public float moveHorizontal;
-    
+    public float moveVertical;
 
-    [SerializeField] private TrailRenderer tr;
+   [SerializeField] private TrailRenderer tr;
 
     private void Awake()
     {
@@ -70,7 +70,7 @@ public class Move : Physics2DObject
             moveInput = controls.Player2.Move.ReadValue<Vector2>();
 
         moveHorizontal = moveInput.x;
-        float moveVertical = 0f;
+       moveVertical = 0f;
         if (isDashing) {
             moveVertical = moveInput.y;
         }

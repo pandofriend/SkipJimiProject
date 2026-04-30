@@ -17,22 +17,40 @@ public class PlayerAnimator : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-      if(!jump) return;
-      if(!move) return;
-      if(!animator) return;
+    {
+        if (!jump) return;
+        if (!move) return;
+        if (!animator) return;
 
-    //Check moveHorizontal in PLayground Move
-      if(move.moveHorizontal > 0.0f || move.moveHorizontal < -0.0f )
-      {
-      animator.SetBool("isWalking", true);
-      } else if (move.moveHorizontal == 0.0f)
+        //Check moveHorizontal in PLayground Move
+        if (move.moveHorizontal > 0.0f || move.moveHorizontal < -0.0f)
         {
-        animator.SetBool("isWalking", false);
+            animator.SetBool("isWalking", true);
         }
-     
-       //Check jumping in Playground Jump
-       animator.SetBool("isJumping", !jump.canJump);
+        else if (move.moveHorizontal == 0.0f)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        if (!jump.canJump)
+        {
+            if (move.moveVertical > 0.1f)
+            {
+                animator.SetBool("isFalling", false);
+                animator.SetBool("isRising", true);
+            }
+            else if (move.moveVertical < -0.1f)
+            {
+                animator.SetBool("isFalling", true);
+                animator.SetBool("isRising", false);
+            }
+        } else
+        {
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isRising", false);
+        }
+            //Check jumping in Playground Jump
+            animator.SetBool("isJumping", !jump.canJump);
 
+        
     }
-}
+    }
