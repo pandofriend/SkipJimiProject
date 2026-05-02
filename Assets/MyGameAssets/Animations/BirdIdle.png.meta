@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 0c32f212c3ea85a4b98b00c6f71d68d0
+guid: 218203c905074b048bdcfdb1dd7b6878
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2416984627455534987
-    second: BirdRise_0
+      213: -5626739899825357528
+    second: BirdIdle_0
   - first:
-      213: -1822349056006128437
-    second: BirdRise_1
+      213: -6628739668497123221
+    second: BirdIdle_1
   - first:
-      213: -6578035829541740824
-    second: BirdRise_2
+      213: -1205632382181950946
+    second: BirdIdle_2
+  - first:
+      213: -4153263727312996860
+    second: BirdIdle_3
+  - first:
+      213: -2970437362314796445
+    second: BirdIdle_4
+  - first:
+      213: -1366003007926421235
+    second: BirdIdle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -119,67 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BirdRise_0
+      name: BirdIdle_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 22
-        width: 432
-        height: 537
+        x: 0
+        y: 0
+        width: 578
+        height: 578
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 578deec7945257ed0800000000000000
-      internalID: -2416984627455534987
+      spriteID: 82d74637fddc9e1b0800000000000000
+      internalID: -5626739899825357528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdRise_1
+      name: BirdIdle_1
       rect:
         serializedVersion: 2
-        x: 619
-        y: 22
-        width: 431
-        height: 544
+        x: 578
+        y: 0
+        width: 578
+        height: 578
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcc7cf35037b5b6e0800000000000000
-      internalID: -1822349056006128437
+      spriteID: b6830be546cf104a0800000000000000
+      internalID: -6628739668497123221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdRise_2
+      name: BirdIdle_2
       rect:
         serializedVersion: 2
-        x: 1196
-        y: 26
-        width: 433
-        height: 545
+        x: 1156
+        y: 0
+        width: 578
+        height: 578
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ee5f54d34f16b4a0800000000000000
-      internalID: -6578035829541740824
+      spriteID: e1a36527cbbb44fe0800000000000000
+      internalID: -1205632382181950946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 0
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4067efa15a4ac56c0800000000000000
+      internalID: -4153263727312996860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 0
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362adaff4f2e6c6d0800000000000000
+      internalID: -2970437362314796445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 0
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d093e6e608bfa0de0800000000000000
+      internalID: -1366003007926421235
       vertices: []
       indices: 
       edges: []
@@ -188,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c72e226fc25d11f4c8f686d93744bfcb
     internalID: 0
     vertices: []
     indices: 
@@ -196,11 +271,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":578.0,"y":578.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BirdRise_0: -2416984627455534987
-      BirdRise_1: -1822349056006128437
-      BirdRise_2: -6578035829541740824
+      BirdIdle_0: -5626739899825357528
+      BirdIdle_1: -6628739668497123221
+      BirdIdle_2: -1205632382181950946
+      BirdIdle_3: -4153263727312996860
+      BirdIdle_4: -2970437362314796445
+      BirdIdle_5: -1366003007926421235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
